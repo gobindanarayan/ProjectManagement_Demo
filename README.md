@@ -162,5 +162,3 @@ mvnw, mvnw.cmd  Unix and Windows Maven Wrapper scripts
 ## Deployment note
 
 This repository is an implementation baseline, not a claim of production readiness. Before internal rollout, configure TLS and secure infrastructure, review employee access and retention policies, use schema migrations and backups, change default infrastructure settings, and complete the documented deployment and security verification with company personnel.
-#   P r o j e c t M a n a g e m e n t _ D e m o  
- 
