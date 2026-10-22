@@ -1,6 +1,6 @@
 # Manik Agro Internal Project Management System
 
-An internal workspace for viewing projects, tracking progress, coordinating teams and tasks, and recording project expenditure. The AJAH record uses the neutral description supplied in the project brief. Its numbers and linked sample records are fictional demonstration values and must be replaced or verified by authorized company personnel.
+The Manik Agro Project Management System helps staff manage projects in one place. It includes a login page and dashboard to track progress, budgets, and recent activity. Users can view project details, coordinate team members, manage tasks, and record expenses. The AJAH record uses the neutral description in the project brief; its numbers and linked sample records are fictional and should be verified or replaced by authorized company personnel.
 
 ## Features
 
