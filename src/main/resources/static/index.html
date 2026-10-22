@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123f35">
+  <meta name="description" content="Manik Agro internal project management workspace">
+  <title>Manik Agro | Project Workspace</title>
+  <link rel="stylesheet" href="/assets/app.css">
+</head>
+<body>
+  <div id="login-screen" class="login-screen" hidden>
+    <div class="login-aside">
+      <div class="brand-mark brand-mark-light"><span class="brand-leaf">m</span></div>
+      <p class="eyebrow">MANIK AGRO PRIVATE LIMITED</p>
+      <h1>Make every<br>project count.</h1>
+      <p class="login-aside-copy">A shared space to keep projects, people and spending moving in the same direction.</p>
+      <div class="login-decoration"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="login-footnote">Internal employee workspace</div>
+    </div>
+    <main class="login-main">
+      <form id="login-form" class="login-card">
+        <div class="brand-mark brand-mark-small"><span class="brand-leaf">m</span></div>
+        <p class="eyebrow">WELCOME BACK</p>
+        <h2>Sign in to your workspace</h2>
+        <p class="muted">Use the employee account provided by your administrator.</p>
+        <label class="field-label" for="login-username">Username</label>
+        <input id="login-username" name="username" autocomplete="username" required placeholder="Your username">
+        <label class="field-label" for="login-password">Password</label>
+        <input id="login-password" name="password" type="password" autocomplete="current-password" required placeholder="Your password">
+        <div id="login-error" class="form-error" role="alert" hidden></div>
+        <button class="button button-primary button-full" type="submit">Sign in <span aria-hidden="true">→</span></button>
+        <p class="login-help">Need access? Contact your system administrator.</p>
+      </form>
+    </main>
+  </div>
+
+  <div id="app-shell" class="app-shell" hidden>
+    <aside id="sidebar" class="sidebar">
+      <a class="brand-lockup" href="#dashboard" aria-label="Manik Agro home">
+        <span class="brand-mark"><span class="brand-leaf">m</span></span>
+        <span><strong>manik agro</strong><small>PROJECT WORKSPACE</small></span>
+      </a>
+      <div class="nav-section-label">WORKSPACE</div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-page="dashboard"><span class="nav-icon" data-icon="grid"></span><span>Overview</span></button>
+        <button class="nav-link" data-page="projects"><span class="nav-icon" data-icon="briefcase"></span><span>Projects</span><span id="project-nav-count" class="nav-count"></span></button>
+      </nav>
+      <div class="nav-section-label nav-section-spaced">MANAGE</div>
+      <nav class="primary-nav" aria-label="Management navigation">
+        <button class="nav-link" data-page="employees" data-admin-only><span class="nav-icon" data-icon="users"></span><span>Employees</span></button>
+      </nav>
+      <div class="sidebar-note">
+        <span class="note-icon" data-icon="shield"></span>
+        <div><strong>Internal workspace</strong><p>Project information for authorized employees.</p></div>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="sidebar-user-avatar" id="sidebar-avatar">MA</div>
+        <div class="sidebar-user-copy"><strong id="sidebar-name">Employee</strong><small id="sidebar-role">EMPLOYEE</small></div>
+        <button id="logout-button" class="icon-button sidebar-logout" aria-label="Sign out" title="Sign out"><span data-icon="logout"></span></button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button id="mobile-menu" class="icon-button mobile-menu" aria-label="Open navigation"><span data-icon="menu"></span></button>
+        <div class="topbar-title"><span class="topbar-kicker">MANIK AGRO / WORKSPACE</span><h1 id="page-title">Overview</h1></div>
+        <div class="topbar-actions">
+          <button id="notification-button" class="icon-button notification-button" aria-label="Recent activity"><span data-icon="bell"></span><i id="notification-dot" hidden></i></button>
+          <div class="topbar-divider"></div>
+          <div class="profile-chip"><div class="profile-avatar" id="profile-avatar">MA</div><div class="profile-copy"><strong id="profile-name">Employee</strong><small id="profile-role">Employee</small></div><span class="profile-chevron" data-icon="chevron-down"></span></div>
+        </div>
+        <div id="notification-popover" class="notification-popover" hidden></div>
+      </header>
+      <section id="page-content" class="page-content" aria-live="polite"></section>
+      <footer class="app-footer"><span>Manik Agro Private Limited</span><span>Internal project workspace</span></footer>
+    </main>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+  </div>
+
+  <dialog id="app-dialog" class="app-dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

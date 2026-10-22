@@ -1,0 +1,9 @@
+target/
+.m2repo/
+.maven-user/
+.env
+.idea/
+*.iml
+.vscode/
+*.log
+Thumbs.db
